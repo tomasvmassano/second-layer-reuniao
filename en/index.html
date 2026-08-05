@@ -122,8 +122,8 @@
     <h1 class="reveal">Turn your audience<br>into a real <span class="serif">business</span>.</h1>
     <p class="lead reveal">Without becoming a full-time CEO. We're the team that handles your funnels, operations and monetization, so you can keep doing what you do best: creating. Watch the video before our chat.</p>
     <div class="video-wrap reveal">
-      <!-- VIDEO: paste the numeric Vimeo ID into data-vimeo-id (e.g. 1152952403) -->
-      <div class="video-slot" data-vimeo-id=""><div class="video-placeholder"><div class="play"></div><span>Video coming soon</span></div></div>
+      <!-- VIDEO: YouTube via data-youtube-id | Vimeo via data-vimeo-id -->
+      <div class="video-slot" data-youtube-id="ulgOIfjpFns"><div class="video-placeholder"><div class="play"></div><span>Video coming soon</span></div></div>
     </div>
   </div>
 </div>
@@ -297,11 +297,20 @@
 <script>
   document.querySelectorAll('.video-slot').forEach(function(slot){
     var vid = (slot.getAttribute('data-vimeo-id') || '').trim();
+    var yt  = (slot.getAttribute('data-youtube-id') || '').trim();
+    var f;
     if(vid && /^[0-9]+$/.test(vid)){
       var ph = slot.querySelector('.video-placeholder'); if(ph) ph.remove();
-      var f = document.createElement('iframe');
+      f = document.createElement('iframe');
       f.src = 'https://player.vimeo.com/video/' + vid + '?dnt=1&title=0&byline=0&portrait=0';
       f.allow = 'autoplay; fullscreen; picture-in-picture'; f.loading = 'lazy';
+      slot.appendChild(f);
+    } else if(yt && /^[A-Za-z0-9_-]{6,}$/.test(yt)){
+      var ph2 = slot.querySelector('.video-placeholder'); if(ph2) ph2.remove();
+      f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + yt;
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      f.loading = 'lazy'; f.setAttribute('allowfullscreen','');
       slot.appendChild(f);
     }
   });
