@@ -122,8 +122,8 @@
     <h1 class="reveal">Transforma a tua audiência<br>num <span class="serif">negócio</span> a sério.</h1>
     <p class="lead reveal">Sem te tornares um CEO a tempo inteiro. Somos a equipa que trata dos teus funis, operações e monetização, para tu continuares a fazer o que fazes melhor: criar. Vê o vídeo antes da nossa conversa.</p>
     <div class="video-wrap reveal">
-      <!-- VÍDEO: cola o ID numérico do Vimeo em data-vimeo-id (ex: 1152952403) -->
-      <div class="video-slot" data-vimeo-id=""><div class="video-placeholder"><div class="play"></div><span>Vídeo em breve</span></div></div>
+      <!-- VÍDEO: YouTube via data-youtube-id | Vimeo via data-vimeo-id -->
+      <div class="video-slot" data-youtube-id="gSs2dL6TulQ"><div class="video-placeholder"><div class="play"></div><span>Vídeo em breve</span></div></div>
     </div>
   </div>
 </div>
@@ -297,11 +297,20 @@
 <script>
   document.querySelectorAll('.video-slot').forEach(function(slot){
     var vid = (slot.getAttribute('data-vimeo-id') || '').trim();
+    var yt  = (slot.getAttribute('data-youtube-id') || '').trim();
+    var f;
     if(vid && /^[0-9]+$/.test(vid)){
       var ph = slot.querySelector('.video-placeholder'); if(ph) ph.remove();
-      var f = document.createElement('iframe');
+      f = document.createElement('iframe');
       f.src = 'https://player.vimeo.com/video/' + vid + '?dnt=1&title=0&byline=0&portrait=0';
       f.allow = 'autoplay; fullscreen; picture-in-picture'; f.loading = 'lazy';
+      slot.appendChild(f);
+    } else if(yt && /^[A-Za-z0-9_-]{6,}$/.test(yt)){
+      var ph2 = slot.querySelector('.video-placeholder'); if(ph2) ph2.remove();
+      f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + yt;
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      f.loading = 'lazy'; f.setAttribute('allowfullscreen','');
       slot.appendChild(f);
     }
   });
