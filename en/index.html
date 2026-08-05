@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Second Layer · Your consultation</title>
+<meta name="description" content="See how we turn your audience into a real business, before our chat.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Second Layer · Your consultation">
+<meta property="og:description" content="See how we turn your audience into a real business, before our chat.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.prod.website-files.com/69673b6ba223b240d5ae8147/697e6cdc82730b0e1a33d871_SecondLayer_Logo.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230A0A0A'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='600' fill='%23FFFFFF' text-anchor='middle'%3ESL%3C/text%3E%3C/svg%3E">
+<!--
+  ══════════════════════════════════════════════════════════════
+  SECOND LAYER · CONSULTATION PAGE (DM version — NO button, EN)
+  For people already talking to you in DMs. Portuguese version at
+  reuniao.secondlayerhq.com; ads/link-in-bio version at agendar.secondlayerhq.com.
+
+  MAIN VIDEO: find data-vimeo-id="" and paste the numeric Vimeo ID.
+  ══════════════════════════════════════════════════════════════
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black-100:#0A0A0A;--black-base:#1B1D1E;--white:#FFFFFF;--off-white:#FAFAFA;
+    --burgundy:#6F1A1C;--w10:rgba(255,255,255,.10);--w40:rgba(255,255,255,.40);--w60:rgba(255,255,255,.60);
+    --container-lg:1272px;--container-md:820px;
+    --ease-standard:cubic-bezier(.25,.46,.45,.94);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--black-100);color:var(--white);font-family:'Inter Tight',Arial,sans-serif;font-weight:400;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+  .container{max-width:var(--container-lg);margin:0 auto;padding:0 24px}
+  .container-md{max-width:var(--container-md);margin:0 auto;padding:0 24px}
+
+  header{padding:32px 0}
+  header .container{display:flex;align-items:center;justify-content:center}
+  header img{height:34px;width:auto;display:block}
+
+  .hero{padding:80px 0 40px;text-align:center}
+  section{padding:100px 0 20px}
+
+  .eyebrow{display:inline-block;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--w60);margin-bottom:24px}
+  h1{font-size:clamp(40px,6.6vw,88px);font-weight:500;line-height:1.04;letter-spacing:-.02em}
+  h2{font-size:clamp(36px,5.5vw,64px);font-weight:500;line-height:1.06;letter-spacing:-.015em}
+  h3{font-size:clamp(26px,3.5vw,40px);font-weight:500;line-height:1.1}
+  .lead{font-size:clamp(17px,2vw,21px);color:var(--w60);max-width:660px;margin:32px auto 0}
+  .section-head{max-width:720px;margin:0 auto;text-align:center}
+
+  .video-wrap{margin:56px auto 0;max-width:920px}
+  .video-slot{position:relative;border:1px solid var(--w10);border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:var(--black-base);transition:border-color .3s var(--ease-standard)}
+  .video-slot:hover{border-color:rgba(255,255,255,.2)}
+  .video-slot iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .video-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:var(--w40);font-size:14px;letter-spacing:1px;text-transform:uppercase}
+  .video-placeholder .play{width:72px;height:72px;border:1px solid var(--w10);border-radius:999px;display:flex;align-items:center;justify-content:center}
+  .video-placeholder .play::after{content:"";display:block;margin-left:5px;border-left:18px solid var(--w40);border-top:11px solid transparent;border-bottom:11px solid transparent}
+
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:64px}
+  .card{border:1px solid var(--w10);border-radius:16px;padding:36px;display:flex;flex-direction:column;gap:14px;transition:border-color .3s var(--ease-standard)}
+  .card:hover{border-color:rgba(255,255,255,.2)}
+  .card .num{font-size:14px;font-weight:600;letter-spacing:1px;color:var(--burgundy)}
+  .card h4{font-size:clamp(21px,2.4vw,26px);font-weight:600;line-height:1.2}
+  .card p{font-size:16px;color:var(--w60)}
+  .kicker{text-align:center;font-size:clamp(20px,2.6vw,28px);font-weight:500;margin-top:56px;color:var(--white)}
+  .kicker .serif{color:#c98a8b}
+
+  /* Skool communities grid */
+  .skool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+  .skool-card{display:flex;flex-direction:column;border:1px solid var(--w10);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .3s var(--ease-standard),transform .3s var(--ease-standard)}
+  .skool-card:hover{border-color:rgba(255,255,255,.2);transform:translateY(-3px)}
+  .skool-cover{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--black-base)}
+  .skool-body{padding:0 24px 26px;display:flex;flex-direction:column;gap:14px;flex:1}
+  .skool-logo{width:56px;height:56px;border-radius:14px;object-fit:cover;background:var(--black-base);border:3px solid var(--black-100);margin-top:-30px;position:relative;flex:none}
+  .skool-name{font-size:18px;font-weight:600;line-height:1.25}
+  .skool-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+  .skool-pill{font-size:13px;font-weight:500;color:var(--w60);border:1px solid var(--w10);border-radius:999px;padding:6px 13px}
+  .skool-pill.price{color:var(--white);border-color:rgba(111,26,28,.55);background:rgba(111,26,28,.18)}
+  .skool-link{font-size:14px;font-weight:600;color:#c98a8b}
+  @media (max-width:991px){.skool-grid{grid-template-columns:repeat(2,1fr)}}
+
+  .panel{border:1px solid var(--w10);border-radius:16px;padding:clamp(32px,5vw,64px);margin-top:56px;background:linear-gradient(180deg,rgba(111,26,28,.10),rgba(111,26,28,0))}
+  .checklist{list-style:none;margin:32px 0 0;display:grid;gap:16px;max-width:620px}
+  .checklist li{display:flex;gap:14px;font-size:clamp(16px,1.9vw,18px);color:rgba(255,255,255,.82)}
+  .checklist li::before{content:"";flex:none;margin-top:9px;width:16px;height:16px;border-radius:999px;border:1px solid var(--burgundy);background:radial-gradient(circle at center,var(--burgundy) 0 5px,transparent 6px)}
+
+  .closing{padding:120px 0 40px;text-align:center}
+  .closing img{height:38px;width:auto;margin-bottom:40px;opacity:.9}
+  .closing p{color:var(--w60);margin-top:20px;font-size:clamp(17px,2vw,20px)}
+
+  footer{border-top:1px solid var(--w10);padding:40px 0 60px;margin-top:100px}
+  footer .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+  footer span{font-size:14px;color:var(--w40)}
+
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .5s var(--ease-standard),transform .5s var(--ease-standard)}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:767px){
+    .hero{padding:72px 0 20px}
+    section{padding:72px 0 10px}
+    .cards{grid-template-columns:1fr;margin-top:48px}
+    .skool-grid{grid-template-columns:1fr}
+    .video-wrap{margin-top:40px}
+    footer{margin-top:72px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <img src="https://cdn.prod.website-files.com/69673b6ba223b240d5ae8147/697e6cdc82730b0e1a33d871_SecondLayer_Logo.png" alt="Second Layer">
+  </div>
+</header>
+
+<!-- ══ HERO ══ -->
+<div class="hero">
+  <div class="container">
+    <h1 class="reveal">Turn your audience<br>into a real <span class="serif">business</span>.</h1>
+    <p class="lead reveal">Without becoming a full-time CEO. We're the team that handles your funnels, operations and monetization, so you can keep doing what you do best: creating. Watch the video before our chat.</p>
+    <div class="video-wrap reveal">
+      <!-- VIDEO: paste the numeric Vimeo ID into data-vimeo-id (e.g. 1152952403) -->
+      <div class="video-slot" data-vimeo-id=""><div class="video-placeholder"><div class="play"></div><span>Video coming soon</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ WHAT WE DO ══ -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow reveal">What we do for you</div>
+      <h2 class="reveal">The layer your<br><span class="serif">business</span> is missing.</h2>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="num">01</div>
+        <h4>Monetization</h4>
+        <p>We turn followers into recurring revenue: digital products, communities, coaching and offers that sell themselves.</p>
+      </div>
+      <div class="card reveal">
+        <div class="num">02</div>
+        <h4>Funnels &amp; Traffic</h4>
+        <p>We build and run the funnels and paid traffic that bring predictable sales, not lucky spikes.</p>
+      </div>
+      <div class="card reveal">
+        <div class="num">03</div>
+        <h4>Operations &amp; Backend</h4>
+        <p>We handle the infrastructure, automations and CRM. You stop being the bottleneck in your own business.</p>
+      </div>
+      <div class="card reveal">
+        <div class="num">04</div>
+        <h4>Strategy</h4>
+        <p>A growth plan built for you, not generic templates that fit everyone and no one.</p>
+      </div>
+    </div>
+    <p class="kicker reveal">We only grow when <span class="serif">you</span> grow.</p>
+  </div>
+</section>
+
+<!-- ══ SKOOL COMMUNITIES (proof — public examples, not clients) ══ -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow reveal">The model in action</div>
+      <h2 class="reveal">Communities actually<br><span class="serif">making money</span> on Skool.</h2>
+      <p class="lead reveal">These aren't our clients, they're public examples of what a well-built community can do. Real member counts and prices, straight from Skool.</p>
+    </div>
+    <div class="skool-grid">
+      <!--
+        TO EDIT: each card is one community. Fill in href (Skool link),
+        skool-cover (cover image), skool-logo (icon), name, members and price.
+        Duplicate a card to add more; member counts/prices are Skool snapshots.
+      -->
+      <a class="skool-card reveal" href="https://www.skool.com/claudecodeclub" target="_blank" rel="noopener">
+        <img class="skool-cover" loading="lazy" alt="" src="https://assets.skool.com/f/ef2ee11d0f534142a7baeafcea5d8a0f/f44ce8fee1c6439eb9de5f722f95d97f84847364f9d74f4badb39130612d81b2-md.jpg">
+        <div class="skool-body">
+          <img class="skool-logo" loading="lazy" alt="Claude Code Club" src="https://assets.skool.com/f/6f399840421f49e0afed0a2b13760c8b/10a7048454e34be28acd0914b2a2c5042695c3e8be9444ffb60bd4d1ab5dd003-sm.jpg">
+          <div class="skool-name">Claude Code Club</div>
+          <div class="skool-meta"><span class="skool-pill">7,900 members</span><span class="skool-pill price">$9/mo</span></div>
+          <div class="skool-link">View community →</div>
+        </div>
+      </a>
+      <a class="skool-card reveal" href="https://www.skool.com/stndrd" target="_blank" rel="noopener">
+        <img class="skool-cover" loading="lazy" alt="" src="https://assets.skool.com/f/9c54077a756a46d4bf146fe7c96d3d97/d365eb3069914544b1ca622e98a2199bdc1d004ea4764d6da80f8a1078c450c3-md.jpg">
+        <div class="skool-body">
+          <img class="skool-logo" loading="lazy" alt="Set The Standard" src="https://assets.skool.com/f/46f43ebbb84e40d997cdaad6559df303/39e8c93414724ceda6ceae0c39412a85aa452fcc038347dcbb65df9a92a681be-sm.jpg">
+          <div class="skool-name">Set The Standard</div>
+          <div class="skool-meta"><span class="skool-pill">2,700 members</span><span class="skool-pill price">$10/mo</span></div>
+          <div class="skool-link">View community →</div>
+        </div>
+      </a>
+      <a class="skool-card reveal" href="https://www.skool.com/tutorials-lite" target="_blank" rel="noopener">
+        <img class="skool-cover" loading="lazy" alt="" src="https://assets.skool.com/f/01ef1c2de01b4fcdb2bd8e8507981946/0a3fad0710564ca5b04b67a3ff8cb0b0157bef2d4da14878a390c7c454d8f1ff-md.jpg">
+        <div class="skool-body">
+          <img class="skool-logo" loading="lazy" alt="THE BLUEPRINT" src="https://assets.skool.com/f/c23566abe8bb4cd0b49287bcc4819706/4d8f21a479ec481bbaac36e0b9ceca1e3df7f0dac4824e56bec876f7826a0ecb-sm.jpg">
+          <div class="skool-name">THE BLUEPRINT</div>
+          <div class="skool-meta"><span class="skool-pill">1,400 members</span><span class="skool-pill price">$9/mo</span></div>
+          <div class="skool-link">View community →</div>
+        </div>
+      </a>
+      <a class="skool-card reveal" href="https://www.skool.com/thatpickleballschool" target="_blank" rel="noopener">
+        <img class="skool-cover" loading="lazy" alt="" src="https://assets.skool.com/f/44b2fb4fbc424b16b63d61010ec229b5/dc7dcaa0bcf7483897dbc41e53e533b93d2a8bec093740d1bef2eb9cfeb2e1cc-md.jpg">
+        <div class="skool-body">
+          <img class="skool-logo" loading="lazy" alt="That Pickleball School" src="https://assets.skool.com/f/841795c5a39f42598ad61c1d7951d199/aee930d64d304dfab2ac1d2a01d9278d6d7af3d8421641bcba8efd15baa48bcf-sm.jpg">
+          <div class="skool-name">That Pickleball School</div>
+          <div class="skool-meta"><span class="skool-pill">1,200 members</span><span class="skool-pill price">$49/mo</span></div>
+          <div class="skool-link">View community →</div>
+        </div>
+      </a>
+      <a class="skool-card reveal" href="https://www.skool.com/medical-courier" target="_blank" rel="noopener">
+        <img class="skool-cover" loading="lazy" alt="" src="https://assets.skool.com/f/7955991a21a24dc5967faa491fa0f19f/a87d53ae0e19482582564887263c8cf2720a0b258bbb4bb0ad6cfc47ce128e67-md.jpg">
+        <div class="skool-body">
+          <img class="skool-logo" loading="lazy" alt="Medical Courier Hub" src="https://assets.skool.com/f/7955991a21a24dc5967faa491fa0f19f/0cdbda67ece943378721cb90e246e34b62cb57c029b94e87ae311c1bcded6358">
+          <div class="skool-name">Medical Courier Hub</div>
+          <div class="skool-meta"><span class="skool-pill">942 members</span><span class="skool-pill price">$29/mo</span></div>
+          <div class="skool-link">View community →</div>
+        </div>
+      </a>
+      <a class="skool-card reveal" href="https://www.skool.com/paid-to-travel-club-5879" target="_blank" rel="noopener">
+        <img class="skool-cover" loading="lazy" alt="" src="https://assets.skool.com/f/041e164c770142a2b64d3732e19fecd0/723444a823cd41bf9386e66648de5b19bd4809c6c71547d6b59dd8c69051009a-md.jpg">
+        <div class="skool-body">
+          <img class="skool-logo" loading="lazy" alt="Paid To Travel Club" src="https://assets.skool.com/f/3c57246a21b2406a8067bce3f087de28/2171936b26a44747a6bc43201e4f21a8996a9903222e4e16b68f0c5dafe94c67-sm.jpg">
+          <div class="skool-name">Paid To Travel Club</div>
+          <div class="skool-meta"><span class="skool-pill">643 members</span><span class="skool-pill price">$39/mo</span></div>
+          <div class="skool-link">View community →</div>
+        </div>
+      </a>
+      <a class="skool-card reveal" href="https://www.skool.com/flow60" target="_blank" rel="noopener">
+        <img class="skool-cover" loading="lazy" alt="" src="https://assets.skool.com/f/12942f474b4f43cd927c0d3f8da57003/cbc86e8fbdad440ca7ed8e5bcf9f350692101870bf3f4a7eaa89cf41274712eb-md.jpg">
+        <div class="skool-body">
+          <img class="skool-logo" loading="lazy" alt="Mike Chang's Flow60" src="https://assets.skool.com/f/68cc2bf9e2364499a4e2c40ebc765066/b5c29032d7c04075b12b99a5664e3bb1eddd9def21fa411a9fa714147c502952-sm.jpg">
+          <div class="skool-name">Mike Chang's Flow60</div>
+          <div class="skool-meta"><span class="skool-pill">384 members</span><span class="skool-pill price">$17/mo</span></div>
+          <div class="skool-link">View community →</div>
+        </div>
+      </a>
+      <a class="skool-card reveal" href="https://www.skool.com/wealthhackers" target="_blank" rel="noopener">
+        <img class="skool-cover" loading="lazy" alt="" src="https://assets.skool.com/f/231acc9016ea41028c569ec7c16047cf/8ace17a80f044064a9982b60482c3a898b6c3a7c2d5142b99ec36f92cf176848-md.jpg">
+        <div class="skool-body">
+          <img class="skool-logo" loading="lazy" alt="Wealth Hackers" src="https://assets.skool.com/f/af6c22d6aa3e4101aff5e5af6b45bd37/33a36487d9f149f8a3743b46864acf8762b5954cd0854e218665706270d5e8f1-sm.jpg">
+          <div class="skool-name">Wealth Hackers</div>
+          <div class="skool-meta"><span class="skool-pill">166 members</span><span class="skool-pill price">$37/mo</span></div>
+          <div class="skool-link">View community →</div>
+        </div>
+      </a>
+      <a class="skool-card reveal" href="https://www.skool.com/openautomation-collective-6267" target="_blank" rel="noopener">
+        <img class="skool-cover" loading="lazy" alt="" src="https://assets.skool.com/f/69a1317d3fbd41bc83e13121e2e11b7e/ae52ae4fbf0b4e18850364995baaf95766d997f058ff47939bcee7e7c238193f-md.jpg">
+        <div class="skool-body">
+          <img class="skool-logo" loading="lazy" alt="Voice Builders Hub" src="https://assets.skool.com/f/b0427dfe6585409888637fdd7baea6f0/46e1f6431e524480baaabc6355b397861d310c73cdea4342b8f51d54081f7470-sm.jpg">
+          <div class="skool-name">Voice Builders Hub</div>
+          <div class="skool-meta"><span class="skool-pill">89 members</span><span class="skool-pill price">$49/mo</span></div>
+          <div class="skool-link">View community →</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ THE CONSULTATION ══ -->
+<section>
+  <div class="container-md">
+    <div class="section-head">
+      <div class="eyebrow reveal">Our meeting</div>
+      <h2 class="reveal">What happens in your<br><span class="serif">consultation</span>.</h2>
+    </div>
+    <div class="panel reveal">
+      <p style="font-size:clamp(17px,2vw,20px);color:rgba(255,255,255,.82)">We analyze your business as a creator: what you're doing, what's holding you back, and where the biggest opportunities you're leaving on the table are. You'll leave with clarity on your next steps, whether you work with us or not.</p>
+      <ul class="checklist">
+        <li>An honest look at your current setup and your monetization potential.</li>
+        <li>The mistakes costing you revenue and how to fix them.</li>
+        <li>A concrete growth plan using the techniques we run with our creators.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CLOSING ══ -->
+<div class="closing">
+  <div class="container-md">
+    <img class="reveal" src="https://cdn.prod.website-files.com/69673b6ba223b240d5ae8147/697e6cdc82730b0e1a33d871_SecondLayer_Logo.png" alt="Second Layer">
+    <h3 class="reveal">See you at the <span class="serif">meeting</span>.</h3>
+    <p class="reveal">Any questions, just reply in the chat. Talk soon!</p>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <img src="https://cdn.prod.website-files.com/69673b6ba223b240d5ae8147/697e6cdc82730b0e1a33d871_SecondLayer_Logo.png" alt="Second Layer" style="height:24px;width:auto;opacity:.7">
+    <span>©2026 Second Layer. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.video-slot').forEach(function(slot){
+    var vid = (slot.getAttribute('data-vimeo-id') || '').trim();
+    if(vid && /^[0-9]+$/.test(vid)){
+      var ph = slot.querySelector('.video-placeholder'); if(ph) ph.remove();
+      var f = document.createElement('iframe');
+      f.src = 'https://player.vimeo.com/video/' + vid + '?dnt=1&title=0&byline=0&portrait=0';
+      f.allow = 'autoplay; fullscreen; picture-in-picture'; f.loading = 'lazy';
+      slot.appendChild(f);
+    }
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+
+</body>
+</html>
